@@ -1,0 +1,38 @@
+{
+  "name": "wesayido",
+  "version": "0.0.0",
+  "description": "Wedding website for Joe and Lisa",
+  "main": "index.js",
+  "repository": "git@github.com:Jo0Dou/wesayidou.git",
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.40"
+  },
+  "scripts": {
+    "dev": "webpack --config webpack.dev.config.js"
+  },
+  "devDependencies": {
+    "webpack": "1.12.9",
+    "webpack-dev-server": "1.14.0"
+  },
+  "dependencies": {
+    "babel-core": "6.2.1",
+    "babel-loader": "6.2.0",
+    "babel-preset-es2015": "6.1.18",
+    "babel-preset-react": "6.1.18",
+    "babel-preset-stage-0": "6.1.18",
+    "body-parser": "1.15.1",
+    "classnames": "2.2.3",
+    "express": "4.13.4",
+    "history": "1.17.0",
+    "lodash": "3.10.1",
+    "react": "0.14.3",
+    "react-bootstrap": "0.28.3",
+    "react-dom": "0.14.3",
+    "react-redux": "4.0.0",
+    "react-router": "2.0.0-rc5",
+    "redux": "3.2.1",
+    "redux-promise": "0.5.1"
+  }
+}
