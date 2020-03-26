@@ -30,3 +30,21 @@
     transform: rotate(360deg);
   }
 }
+
+.main-app, p {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+.navbar-cust {
+  margin: 0px 20px;
+}
+
+.title {
+  font-style: italic;
+}
+
+.first-letter {
+  font-size: 50px;
+}
