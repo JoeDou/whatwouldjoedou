@@ -33,18 +33,30 @@
 
 .main-app, p {
   font-family: 'Georgia', serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #3e3e3e;
 }
 
 .navbar-cust {
-  margin: 0px 20px;
+  padding: 0px 20px;
 }
 
 .title {
   font-style: italic;
+  font-size: 20px;
 }
 
 .first-letter {
-  font-size: 50px;
+  font-size: 70px;
+}
+
+@media (max-width: 550px){
+  .title {
+    font-style: italic;
+    font-size: 4vw;
+  }
+  
+  .first-letter {
+    font-size: 10vw;
+  }
 }

@@ -1,0 +1,30 @@
+
+iframe {
+  min-width: 100%;
+  min-height: 70vh;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  -webkit-border-radius: 15px; 
+  -moz-border-radius: 15px; 
+}
+
+.center-spinner {
+  position: absolute;
+  top: 30%;
+  left: 48%;
+}
+
+/* active (faded) */
+.nav-pills .pill-1 .nav-link {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  margin: 5px 0px;
+}
+.nav-pills .pill-1 .nav-link:not(.active) {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 0px;
+}
+
+.tabs-padding {
+  padding: 20px 0px
+}

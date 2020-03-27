@@ -1,0 +1,48 @@
+.parallex {
+  min-height: 100vh;
+  padding-top: 35vh;
+  background-attachment: fixed;
+  background-size: cover;
+  position: static;
+  background-position: 30% 30%;
+}
+
+.parallex-font {
+  color: white;
+  padding-left: 10%;
+  font-size: 6em;
+  letter-spacing:normal;
+  text-transform: uppercase;
+}
+
+.subtext {
+  color: white;
+  padding-left: 10%;
+  font-size: 2em;
+  letter-spacing:normal;
+}
+
+.subtext::before,
+.subtext::after {
+    display: inline-block;
+    content: "";
+    border-top: .1em solid white;
+    width: 1.5em;
+    margin: 0 0.2em;
+    transform: translateY(-0.2em);
+}
+
+.profile-card {
+  padding: 20px 0px;
+}
+
+.job-list-title {
+  padding: 30px 0px;
+  font-size: 2em;
+  /* text-align: center; */
+}
+
+img {
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+}
