@@ -32,6 +32,30 @@
     transform: translateY(-0.2em);
 }
 
+@media (max-width: 800px){
+  .parallex-font {
+    font-size: 3em;
+  }
+  
+  .subtext {
+    font-size: 1em;
+  }
+  
+  .subtext::before,
+  .subtext::after {
+      width: 1em;
+      transform: translateY(-0.2em);
+  }
+}
+
+.fullscreen {
+  min-height: 100vh;
+  padding-top: 35vh;
+  background-size: cover;
+  position: static;
+  background-position: 20% 20%;
+}
+
 .profile-card {
   padding: 20px 0px;
 }

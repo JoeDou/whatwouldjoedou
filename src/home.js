@@ -1,14 +1,13 @@
 import React from 'react';
 import './home.css';
 import { Media, Container, Row, Col } from 'react-bootstrap'
+import { useWindowDimensions } from './utils'
 
 export default function Home() {
+  const { width } = useWindowDimensions();
   return (
     <div>
-      <FullBlockView
-        text="Joe Dou"
-        url={process.env.PUBLIC_URL + '/home-v1.png'}
-      />
+      { width > 800 ? <FullBlockView/> : <HalfBlockView/> }
       <Container>
         <Row>
           <Col>
@@ -45,17 +44,29 @@ function JobList() {
   })
 }
 
-function FullBlockView({ url, text, position }) {
+function FullBlockView() {
   let style = {
-    backgroundImage: `url(${url})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/bench-v1.jpg'})`,
     backgroundSize: 'cover'
   }
-  if (position) {
-    style.backgroundPosition= position
-  }
+
   return (
     <div className="parallex fixed-img" style={style}>
-      <div className="parallex-font">{text}</div>
+      <div className="parallex-font">Joe Dou</div>
+      <div className="subtext">Software Developer</div>
+      <div className="subtext">Engineering Leader</div>
+    </div>
+  )
+}
+
+function HalfBlockView() {
+    let style = {
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/bench-v2.jpg'})`,
+    backgroundSize: 'cover'
+  }
+  return (
+    <div className="fullscreen" style={style}>
+      <div className="parallex-font">Joe Dou</div>
       <div className="subtext">Software Developer</div>
       <div className="subtext">Engineering Leader</div>
     </div>

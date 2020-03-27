@@ -8,12 +8,12 @@ export default function Project() {
       <Nav variant="pills" className="tabs-padding">
         <Container>
           <Row>
-            <Col sm={3} md={2} lg={2}>
+            <Col sm={4} md={3} lg={2}>
               <Nav.Item className="pill-1">
                 <Nav.Link eventKey="famospace">Famospace</Nav.Link>
               </Nav.Item>
             </Col>
-            <Col sm={3} md={2} lg={2}>
+            <Col sm={4} md={3} lg={2}>
               <Nav.Item className="pill-1">
                 <Nav.Link eventKey="sudoku">Sudoku</Nav.Link>
               </Nav.Item>

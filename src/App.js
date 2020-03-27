@@ -10,7 +10,7 @@ import Profile from "./profile"
 function App() {
   return (
     <div className="main-app">
-      <Navbar className="navbar-cust" expand="md">
+      <Navbar className="navbar-cust" expand="md" collapseOnSelect="true">
         <Navbar.Brand className="title">
           <span className="first-letter">W</span>hat
           <span className="first-letter">&nbsp;W</span>ould
